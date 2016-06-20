@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 # Create your models here.
-
+# test for save
 
 class Condition(models.Model):
     created_time = models.DateTimeField(_('creation time'), auto_now_add=True)
@@ -51,8 +51,9 @@ class SpecificationValue(models.Model):
         return '%s - %s' % (self.specification, self.display_value)
 
 class Category(models.Model):
-    name = models.CharField(max_lenght=50,  _('category name'))
-    pub_date = models.DateTimeField(auto_now_add=True, _('category publish time'))
+    name = models.CharField(max_length=50,  verbose_name=_('category name'))
+    pub_date = models.DateTimeField(auto_now_add=True,verbose_name= _('category publish time'))
+    parent = models.ForeignKey("self", null=True, blank=True, related_name="children")
 
     class Meta:
         db_table = "category"
@@ -64,26 +65,19 @@ class Category(models.Model):
 
 
 class Product(models.Model):
-    name = models.CharField(max_lenght=50,  _('product name'))
-    pub_date = models.DateTimeField(auto_now_add=True,  _('product publish time'))
-    created_at = models.DateTimeField(auto_now=True), _('product created time')
-    parent = models.ForeignKey("self", null=True, blank=True, related_name="children",
-    is_hidden = models.BooleanField(_("is hidden?"), default=False)
-    is_container = models.BooleanField(_("can contain products?"), default=False)
-    avatar = models.ImageField(_('avatar'), blank=True)
-    priority_manual = models.PositiveSmallIntegerField(_('manual priority'), default=0,
-                                                       help_text=_('This Priority is set by user manually'))
-    priority_auto = models.PositiveIntegerField(_('auto priority'), default=0, editable=False,
-                                                help_text=_('This Priority is automatically calculated by system'))
-
-    specifications = models.ManyToManyField(Specification, verbose_name=_('specifications'), through='ProductCategorySpec')
-    conditions = models.ManyToManyField(Condition, verbose_name=_('conditions'), blank=True)
-
+    name = models.CharField(max_length=50, verbose_name=_('product name'))
+    pub_date = models.DateTimeField(auto_now_add=True,  verbose_name=_('product publish time'))
+    created_at = models.DateTimeField(auto_now=True ,verbose_name=_('product created time'))
+    parent = models.ForeignKey("self", null=True, blank=True, related_name="children")
+    is_hidden = models.BooleanField(verbose_name=_("is hidden?"), default=False)
+    is_container = models.BooleanField(verbose_name=_("can contain products?"), default=False)
+#    avatar = models.ImageField(verbose_name=_('avatar'), blank=True)
+    priority_manual = models.PositiveSmallIntegerField(verbose_name=_('manual priority'), default=0) 
     class Meta:
         db_table = "products_categories"
         verbose_name = _('Category')
         verbose_name_plural = _('Categories')
-        ordering = ["-priority_manual", "-priority_auto", "id"]
+        ordering = ["id","-created_at"]
 
     def __str__(self):
 
