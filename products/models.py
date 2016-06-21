@@ -82,6 +82,6 @@ class Product(models.Model):
         ordering = ["id","-created_at"]
 
     def __str__(self):
-       return self.nam
+       return self.name
 
 
