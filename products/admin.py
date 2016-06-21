@@ -1,6 +1,9 @@
 from django.contrib import admin
-from .models import Category, Product, Condition, Specification
+from .models import Category, Product, Condition, Specification, SpecificationValue
 # Register your models here.
+
+class SpecificationValueAdmin(admin.TabularInline):
+    list_display = ["id","value"]
 @admin.register(Condition)
 class ConditionAdmin(admin.ModelAdmin):
     list_display = ["id", "title", "slug", "created_time"]

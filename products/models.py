@@ -82,7 +82,6 @@ class Product(models.Model):
         ordering = ["id","-created_at"]
 
     def __str__(self):
-
-        return self.display_tree if self.display_tree else self.title
+       return self.nam
 
 
