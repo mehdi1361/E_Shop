@@ -84,4 +84,20 @@ class Product(models.Model):
     def __str__(self):
        return self.name
 
+class ProductImage(models.Model):
+    #image = models.ImageField(verbose_name=_('image for product'), null=True)
+    image_url = models.CharField(max_length=200, verbose_name=_('image for product'), null=True)
+    pub_date = models.DateTimeField(verbose_name=_('publish_date'), auto_now_add=True)
+    description = models.TextField(verbose_name=_('description for image'), null=True, blank=True)
+    product= models.ForeignKey(Product,verbose_name=_('product'), related_name='product')
+    is_enable = models.BooleanField(verbose_name=_('enable for show'), default=False)
+
+    class Meta:
+        db_table = "products_images"
+        verbose_name = _('ProductsImage')
+        verbose_name_plural = _('ProductsImage')
+        ordering = ["id","-pub_date"]
+
+    def __str__(self):
+       return self.image_url
 
