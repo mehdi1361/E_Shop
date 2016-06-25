@@ -25,4 +25,10 @@ class StoreHouse(models.Model):
     repostory = models.ForeignKey(Repository,verbose_name=_("repository"), related_name="repository")
     product = models.ForeignKey(Product,verbose_name=_("product"), related_name="product_store")
     quantity = models.PositiveIntegerField(null=False, default=0)
+    
+    class Meta:
+        db_table = "store_house"
+
+    def __str__(self):
+        return "%s >> %s >> %s" % (self.repostory.name,self.repostory.tel, self.product.name)
 
