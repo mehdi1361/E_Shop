@@ -1,4 +1,5 @@
 from .models import Category, Product, Condition, Specification, SpecificationValue
+from location.models import State, City, Country
 from datetime import datetime
 
 def bulk_category():
@@ -78,17 +79,56 @@ def bulk_specification_value_ram():
     )
     print("bulk bulk_specification_value_ram inserted!!!")
 
+
+def bulk_country():
+	Country.objects.bulk_create(
+		[
+			Country(name='ایران', slug='iran'),
+			Country(name='آمریکا', slug='united states'),
+			Country(name='انگلیس', slug='england'),
+			Country(name='آلمان', slug='Germany'),
+		]
+	)
+	print("bulk bulk_country inserted!!!")
+
+
+def bulk_state():
+	country = Country.objects.get(pk=1)
+	print("create states for %s" % country.name)
+	State.objects.bulk_create(
+		[
+			State(name='تهران', slug='tehran',country=country),
+			State(name='آذربایجان غربی', slug='west azarbayjan', country=country),
+			State(name='آذربایجان شرقی', slug='east azarbayjan', country=country),
+		]
+	)
+	print("bulk bulk_state inserted!!!")
+
+
+def bulk_city():
+	state = State.objects.get(pk=1)
+	City.objects.bulk_create(
+		[
+			City(name='تهران', slug='tehran', state=state),
+			City(name='کرج', slug='karaj', state=state),
+			City(name='شهریار', slug='shahryiar', state=state),
+		]
+	)
+	print("bulk bulk_city inserted!!!")
+
 def bulk_spec_val():
     bulk_specification_value_brand()
     bulk_specification_value_ram()
 
 def bulk_test_data():
-    bulk_category()
-    bulk_product_tablet()
-    bulk_condition()
-    bulk_specification()
-    bulk_spec_val()
-
+	bulk_category()
+	bulk_product_tablet()
+	bulk_condition()
+	bulk_specification()
+	bulk_spec_val()
+	bulk_country()
+	bulk_state()
+	bulk_city()
 
 
 
