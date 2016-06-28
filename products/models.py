@@ -101,3 +101,24 @@ class ProductImage(models.Model):
     def __str__(self):
        return self.image_url
 
+
+class ProductPrice(models.Model):
+    price = models.PositiveIntegerField(verbose_name=_("price for product"), default=0)
+    discount = models.PositiveIntegerField(verbose_name=_("discount for product"), default=0)
+    is_enable = models.BooleanField(verbose_name=_("enable?"), default=True)
+    product = models.ForeignKey(Product, verbose_name=_("product"), related_name="product_price", default=1)
+
+    class Meta:
+        db_table = "product_price_history"
+        verbose_name = _("Price History")
+        verbose_name_plural = _("Price History")
+
+    def __str__(self):
+        return "%s --> %s --> %s" % (self.product.name,self.price, self.discount)
+
+
+
+
+
+
+

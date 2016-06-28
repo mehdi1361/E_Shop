@@ -1,5 +1,6 @@
 from .models import Category, Product, Condition, Specification, SpecificationValue
 from location.models import State, City, Country
+from store.models import StoreHouse, CoRepository 
 from datetime import datetime
 
 def bulk_category():
@@ -116,19 +117,44 @@ def bulk_city():
 	)
 	print("bulk bulk_city inserted!!!")
 
+def bulk_repository():
+    city = City.objects.get(pk=1)
+    CoRepository.objects.bulk_create(
+        [
+            CoRepository(city=city, name="repository1", address="addresssssssssssss1", tel=111111111111),
+            CoRepository(city=city, name="repository2", address="addresssssssssssss2", tel=22222222222),
+            CoRepository(city=city, name="repository3", address="addresssssssssssss3", tel=3333333333),
+            CoRepository(city=city, name="repository4", address="addresssssssssssss4", tel=4444444444),
+            CoRepository(city=city, name="repository5", address="addresssssssssssss1", tel=55555555555),
+        ]
+    )
+    print("bulk bulk_repository inserted!!!")
+
+def bulk_store_house():
+    repository = CoRepository.objects.get(pk=1)
+    product = Product.objects.get(pk=1)
+    StoreHouse.objects.bulk_create(
+        [
+            StoreHouse(repostory=repository, product=product,quantity=1)
+        ]
+    )
+    print("bulk bulk_repository inserted!!!")
+
 def bulk_spec_val():
     bulk_specification_value_brand()
     bulk_specification_value_ram()
 
 def bulk_test_data():
-	bulk_category()
-	bulk_product_tablet()
-	bulk_condition()
-	bulk_specification()
-	bulk_spec_val()
-	bulk_country()
-	bulk_state()
-	bulk_city()
+    bulk_category()
+    bulk_product_tablet()
+    bulk_condition()
+    bulk_specification()
+    bulk_spec_val()
+    bulk_country()
+    bulk_state()
+    bulk_city()
+    bulk_repository()
+    bulk_store_house()
 
 
 

@@ -49,7 +49,7 @@ class State(models.Model):
         ordering = ["name"]
 
     def __str__(self):
-        return '%s>%s' % (self.country.name, self.name)
+        return '%s->%s' % (self.country.name, self.name)
 
 class City(models.Model):
     name = models.CharField(max_length=50, verbose_name= _('city name'))
@@ -65,6 +65,6 @@ class City(models.Model):
         ordering = ["name"]
 
     def __str__(self):
-        return '%s>%s>%s' % (self.state.country.name,self.state.name,self.name)
+        return '%s ->%s ->%s' % (self.state.country.name,self.state.name,self.name)
 
 
