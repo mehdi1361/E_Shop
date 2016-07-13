@@ -16,11 +16,6 @@ class BaseLocation(models.Model):
 '''
 
 class Country(models.Model):
-    #super._meta.get_field('name').verbose_name = 'Whatever'
-    #Country._meta.get_field('name').verbose_name = 'Whatever'
-    #Country._meta.get_field('name').verbose_name='country name'
-    #Country._meta.get_field('slug').verbose_name='country slug'
-    #Country._meta.get_field('description').verbose_name='country description'
     name = models.CharField(max_length=50, verbose_name= _('state name'))
     slug = models.SlugField(_('slug state'), help_text=_('Use ascii characters'))
     description = models.TextField(_('description'), blank=True)
