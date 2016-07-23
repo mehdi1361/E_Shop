@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from location.models import Country, State, City
-from products.models import Condition, Specification
+from products.models import Condition, Specification,SpecificationValue, Category, Product
 
 class CountrySerializer(serializers.ModelSerializer):
     class Meta:
@@ -30,3 +30,21 @@ class SpecificationSerializer(serializers.ModelSerializer):
         model = Specification
         fields = ("id", "created_time", "title", "slug")
         filter_fields = ('slug', 'title')
+
+class SpecificationValueSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SpecificationValue
+        fields = ("id", "display_value", "is_filter_option", "slug", "created_time")
+        filter_fields = ('slug', 'title')
+
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = ("id", "name", "pub_date", "parent")
+        filter_fields = ('id', 'name', 'parent')
+
+class ProductSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Product
+        fields = ("id", "name", "pub_date", "parent", "is_hidden", "is_container", "priority_manual", "category")
+        filter_fields = ('id', 'name', 'parent', 'is_hidden', 'is_container', 'priority_manual', 'category')
