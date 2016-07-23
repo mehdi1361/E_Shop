@@ -11,10 +11,12 @@ class CountryViewSet(viewsets.ModelViewSet):
 class StateViewSet(viewsets.ModelViewSet):
     queryset = State.objects.order_by("-created_time")
     serializer_class = StateSerializer
+    filter_fields = ('name', 'slug', 'state')
 
 class CityViewSet(viewsets.ModelViewSet):
     queryset = City.objects.order_by("-created_time")
     serializer_class = CitySerializer
+    filter_fields = ('name', 'slug')
 
 class ConditionViewSet(viewsets.ModelViewSet):
     queryset = Condition.objects.order_by("-created_time")
