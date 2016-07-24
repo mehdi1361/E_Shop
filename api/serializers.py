@@ -45,7 +45,8 @@ class CategorySerializer(serializers.ModelSerializer):
 
 class ProductSerializer(serializers.ModelSerializer):
     product_price = serializers.StringRelatedField(many=True)
+    product_image = serializers.StringRelatedField(many=True)
     class Meta:
         model = Product
-        fields = ("id", "name", "pub_date", "parent", "is_hidden", "is_container", "priority_manual", "category", "product_price")
+        fields = ("id", "name", "pub_date", "parent", "is_hidden", "is_container", "priority_manual", "category", "product_price", "product_image")
         filter_fields = ('id', 'name', 'parent', 'is_hidden', 'is_container', 'priority_manual', 'category')

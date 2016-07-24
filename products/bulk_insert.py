@@ -1,4 +1,4 @@
-from .models import Category, Product, Condition, Specification, SpecificationValue
+from .models import Category, Product, Condition, Specification, SpecificationValue, ProductPrice
 from location.models import State, City, Country
 from store.models import StoreHouse, CoRepository 
 from datetime import datetime
@@ -34,6 +34,19 @@ def bulk_product_tablet():
     )
     print("bulk Product inserted!!!")
 
+
+def bulk_product_price():
+    product = Product.objects.get(pk=1)
+
+    ProductPrice.objects.bulk_create(
+            [
+                ProductPrice(price=1000, is_enable=False, product=product)
+                ProductPrice(price=950, discount=50, is_enable=False, product=product)
+                ProductPrice(price=900, discount=50, is_enable=False, product=product)
+                ProductPrice(price=830, discount=70, is_enable=False, product=product)
+            ]
+    )
+    print("bulk Product price inserted!!!")
 
 def bulk_condition():
     Condition.objects.bulk_create([
@@ -147,6 +160,7 @@ def bulk_spec_val():
 def bulk_test_data():
     bulk_category()
     bulk_product_tablet()
+    bulk_product_price()
     bulk_condition()
     bulk_specification()
     bulk_spec_val()
