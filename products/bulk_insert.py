@@ -40,9 +40,9 @@ def bulk_product_price():
 
     ProductPrice.objects.bulk_create(
             [
-                ProductPrice(price=1000, is_enable=False, product=product)
-                ProductPrice(price=950, discount=50, is_enable=False, product=product)
-                ProductPrice(price=900, discount=50, is_enable=False, product=product)
+                ProductPrice(price=1000, is_enable=False, product=product),
+                ProductPrice(price=950, discount=50, is_enable=False, product=product),
+                ProductPrice(price=900, discount=50, is_enable=False, product=product),
                 ProductPrice(price=830, discount=70, is_enable=False, product=product)
             ]
     )

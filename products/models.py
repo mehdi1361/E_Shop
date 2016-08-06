@@ -71,9 +71,11 @@ class Product(models.Model):
     parent = models.ForeignKey("self", null=True, blank=True, related_name="children")
     is_hidden = models.BooleanField(verbose_name=_("is hidden?"), default=False)
     is_container = models.BooleanField(verbose_name=_("can contain products?"), default=False)
-#    avatar = models.ImageField(verbose_name=_('avatar'), blank=True)
+    #avatar = models.ImageField(verbose_name=_('avatar'), blank=True)
     priority_manual = models.PositiveSmallIntegerField(verbose_name=_('manual priority'), default=0)
     category = models.ForeignKey(Category, on_delete=None, related_name="cateory", verbose_name=_("category"), default=1)
+    specification = models.ManyToManyField(SpecificationValue, verbose_name=_('specification value'),through='ProductSpec', null=True)
+
 
     class Meta:
         db_table = "products_categories"
@@ -85,8 +87,8 @@ class Product(models.Model):
        return self.name
 
 class ProductImage(models.Model):
-    image = models.ImageField(verbose_name=_('image for product'), null=True)
-    # image_url = models.CharField(max_length=200, verbose_name=_('image for product'), null=True)
+    #image = models.ImageField(verbose_name=_('image for product'), null=True)
+    image_url = models.CharField(max_length=200, verbose_name=_('image for product'), null=True)
     pub_date = models.DateTimeField(verbose_name=_('publish_date'), auto_now_add=True)
     description = models.TextField(verbose_name=_('description for image'), null=True, blank=True)
     product= models.ForeignKey(Product,verbose_name=_('product'), related_name='product_image')
@@ -116,7 +118,14 @@ class ProductPrice(models.Model):
     def __str__(self):
         return "%s --> %s --> %s" % (self.product.name,self.price, self.discount)
 
+class ProductSpec(models.Model):
+    product = models.ForeignKey(Product)
+    spec_val = models.ForeignKey(SpecificationValue)
+    is_required = models.BooleanField(default=True, verbose_name=_('Is Required'))
 
+    class Meta:
+        db_table = 'product_spec_value'
+        unique_together =('product', 'spec_val')
 
 
 

@@ -16,8 +16,10 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from api.urls import router
-
+from location.views import *
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'api/', include(router.urls)),
+    url(r'about/', GreetingView.as_view(greeting='hello')),
+
 ]
