@@ -1,0 +1,10 @@
+{% if category_list %}
+<ul>
+    {% for category in category_list %}
+        <!--<li><a href="/product/{{ product.id }}/">{{ product.name }}</a></li>-->
+        <li>hello world<li>
+    {% endfor %}
+</ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
