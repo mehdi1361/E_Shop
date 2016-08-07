@@ -20,6 +20,7 @@ from location.views import *
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'api/', include(router.urls)),
+    url(r'product/', include('products.urls')),
     url(r'about/', GreetingView.as_view(greeting='hello')),
 
 ]

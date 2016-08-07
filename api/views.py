@@ -39,7 +39,7 @@ class CityViewSet(viewsets.ModelViewSet):
 class ConditionViewSet(viewsets.ModelViewSet):
     queryset = Condition.objects.order_by("-created_time")
     serializer_class = ConditionSerializer
-    filter_fields = ('name', 'slug')
+    filter_fields = ('title', 'slug')
 
 class SpecificationViewSet(viewsets.ModelViewSet):
     queryset = Specification.objects.order_by("-created_time")

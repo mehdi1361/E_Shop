@@ -19,17 +19,20 @@ def bulk_category():
 
 def bulk_product_tablet():
     category = Category.objects.get(pk=5)
+    text = '''لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+
+    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.'''
     Product.objects.bulk_create(
             [
-                Product(name='Galaxy tab s2',created_at=datetime.now(),is_container = True,category=category),
-                Product(name='Galaxy tab s1',created_at=datetime.now(),is_container = True,category=category),
-                Product(name='Galaxy tab s3',created_at=datetime.now(),is_container = True,category=category),
-                Product(name='Galaxy note1',created_at=datetime.now(),is_container = True,category=category),
-                Product(name='Galaxy note2',created_at=datetime.now(),is_container = True,category=category),
-                Product(name='Galaxy note3',created_at=datetime.now(),is_container = True,category=category),
-                Product(name='Galaxy note4',created_at=datetime.now(),is_container = True,category=category),
-                Product(name='xpreia z',created_at=datetime.now(),is_container = True,category=category),
-                Product(name='xperia zl',created_at=datetime.now(),is_container = True,category=category),
+                Product(name='Galaxy tab s2', product_detail=text,created_at=datetime.now(),is_container = True,category=category),
+                Product(name='Galaxy tab s1', product_detail=text,created_at=datetime.now(),is_container = True,category=category),
+                Product(name='Galaxy tab s3', product_detail=text,created_at=datetime.now(),is_container = True,category=category),
+                Product(name='Galaxy note1', product_detail=text,created_at=datetime.now(),is_container = True,category=category),
+                Product(name='Galaxy note2', product_detail=text,created_at=datetime.now(),is_container = True,category=category),
+                Product(name='Galaxy note3', product_detail=text,created_at=datetime.now(),is_container = True,category=category),
+                Product(name='Galaxy note4', product_detail=text,created_at=datetime.now(),is_container = True,category=category),
+                Product(name='xpreia z', product_detail=text,created_at=datetime.now(),is_container = True,category=category),
+                Product(name='xperia zl', product_detail=text,created_at=datetime.now(),is_container = True,category=category),
             ]
     )
     print("bulk Product inserted!!!")

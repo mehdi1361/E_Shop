@@ -66,6 +66,7 @@ class Category(models.Model):
 
 class Product(models.Model):
     name = models.CharField(max_length=50, verbose_name=_('product name'))
+    product_detail = models.TextField(verbose_name=_('product name'), blank=True)
     pub_date = models.DateTimeField(auto_now_add=True,  verbose_name=_('product publish time'))
     created_at = models.DateTimeField(verbose_name=_('product created time'), blank=True, null=True)
     parent = models.ForeignKey("self", null=True, blank=True, related_name="children")
