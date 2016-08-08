@@ -4,7 +4,9 @@ from .models import Product, Category
 from django.views.generic import View
 from django.template import loader
 from django.shortcuts import get_object_or_404, render
+from django.views.decorators.cache import cache_page
 import datetime
+
 
 def index(request):
     product_list = Product.objects.all()[:3]
@@ -14,6 +16,7 @@ def index(request):
     }
     return HttpResponse(template.render(context, request))
 
+@cache_page(60 * 15)
 def category_list(request):
     category_list = Category.objects.all()
     template = loader.get_template('products/category.html')

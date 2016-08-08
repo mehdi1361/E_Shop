@@ -17,10 +17,12 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from api.urls import router
 from location.views import *
+from my_site.views import *
 urlpatterns = [
+    url(r'^$', HomeView.as_view(greeting='Home Page')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'api/', include(router.urls)),
-    url(r'product/', include('products.urls')),
+    url(r'product/', include('my_site.urls')),
     url(r'about/', GreetingView.as_view(greeting='hello')),
 
 ]

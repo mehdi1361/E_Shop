@@ -1,0 +1,325 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALLOWED_HOSTS	E_Shop/settings.py	/^ALLOWED_HOSTS = []$/;"	v
+BASE_DIR	E_Shop/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	v
+Category	products/models.py	/^class Category(models.Model):$/;"	c
+CategoryAdmin	products/admin.py	/^class CategoryAdmin(admin.ModelAdmin):$/;"	c
+City	location/models.py	/^class City(models.Model):$/;"	c
+CityAdmin	location/admin.py	/^class CityAdmin(admin.ModelAdmin):$/;"	c
+CityAdminInline	location/admin.py	/^class CityAdminInline(admin.TabularInline):$/;"	c
+CoRepository	store/models.py	/^class CoRepository(models.Model):$/;"	c
+Command	products/management/commands/create_test_data.py	/^class Command(BaseCommand):$/;"	c
+Condition	products/models.py	/^class Condition(models.Model):$/;"	c
+ConditionAdmin	products/admin.py	/^class ConditionAdmin(admin.ModelAdmin):$/;"	c
+Country	location/models.py	/^class Country(models.Model):$/;"	c
+CountryAdmin	location/admin.py	/^class CountryAdmin(admin.ModelAdmin):$/;"	c
+DATABASES	E_Shop/settings.py	/^DATABASES = {$/;"	v
+DEBUG	E_Shop/settings.py	/^DEBUG = True$/;"	v
+Factor	store/models.py	/^class Factor(models.Model):$/;"	c
+INSTALLED_APPS	E_Shop/settings.py	/^INSTALLED_APPS = ($/;"	v
+LANGUAGE_CODE	E_Shop/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	v
+MIDDLEWARE_CLASSES	E_Shop/settings.py	/^MIDDLEWARE_CLASSES = ($/;"	v
+Meta	location/models.py	/^    class Meta:$/;"	c	class:City
+Meta	location/models.py	/^    class Meta:$/;"	c	class:Country
+Meta	location/models.py	/^    class Meta:$/;"	c	class:State
+Meta	products/models.py	/^    class Meta:$/;"	c	class:Category
+Meta	products/models.py	/^    class Meta:$/;"	c	class:Condition
+Meta	products/models.py	/^    class Meta:$/;"	c	class:Product
+Meta	products/models.py	/^    class Meta:$/;"	c	class:ProductImage
+Meta	products/models.py	/^    class Meta:$/;"	c	class:ProductPrice
+Meta	products/models.py	/^    class Meta:$/;"	c	class:Specification
+Meta	products/models.py	/^    class Meta:$/;"	c	class:SpecificationValue
+Meta	store/models.py	/^    class Meta:$/;"	c	class:CoRepository
+Meta	store/models.py	/^    class Meta:$/;"	c	class:Factor
+Meta	store/models.py	/^    class Meta:$/;"	c	class:ProductFactor
+Meta	store/models.py	/^    class Meta:$/;"	c	class:StoreHouse
+Migration	location/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	products/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	products/migrations/0002_productprice.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	store/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	store/migrations/0002_auto_20160628_0633.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	store/migrations/0003_auto_20160628_0652.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	store/migrations/0004_auto_20160628_0707.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	store/migrations/0005_auto_20160628_0748.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	store/migrations/0006_auto_20160628_0800.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	store/migrations/0007_auto_20160628_0808.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	store/migrations/0008_factor_productfactor.py	/^class Migration(migrations.Migration):$/;"	c
+Product	products/models.py	/^class Product(models.Model):$/;"	c
+ProductAdmin	products/admin.py	/^class ProductAdmin(admin.ModelAdmin):$/;"	c
+ProductFactor	store/models.py	/^class ProductFactor(models.Model):$/;"	c
+ProductImage	products/models.py	/^class ProductImage(models.Model):$/;"	c
+ProductImageAdmin	products/admin.py	/^class ProductImageAdmin(admin.TabularInline):$/;"	c
+ProductPrice	products/models.py	/^class ProductPrice(models.Model):$/;"	c
+ROOT_URLCONF	E_Shop/settings.py	/^ROOT_URLCONF = 'E_Shop.urls'$/;"	v
+RepositoryHouseAdmin	store/admin.py	/^class RepositoryHouseAdmin(admin.ModelAdmin):$/;"	c
+SECRET_KEY	E_Shop/settings.py	/^SECRET_KEY = 'c7yz5jbzs!-l&s*tiwji3$2dz4&jhxsxcx#(wqjuahzm9^p03q'$/;"	v
+STATIC_URL	E_Shop/settings.py	/^STATIC_URL = '\/static\/'$/;"	v
+Specification	products/models.py	/^class Specification(models.Model):$/;"	c
+SpecificationAdmin	products/admin.py	/^class SpecificationAdmin(admin.ModelAdmin):$/;"	c
+SpecificationValue	products/models.py	/^class SpecificationValue(models.Model):$/;"	c
+SpecificationValueAdmin	products/admin.py	/^class SpecificationValueAdmin(admin.TabularInline):$/;"	c
+State	location/models.py	/^class State(models.Model):$/;"	c
+StateAdmin	location/admin.py	/^class StateAdmin(admin.ModelAdmin):$/;"	c
+StateAdminInine	location/admin.py	/^class StateAdminInine(admin.TabularInline):$/;"	c
+StoreAdmin	products/admin.py	/^class StoreAdmin(admin.TabularInline):$/;"	c
+StoreAdmin	store/admin.py	/^class StoreAdmin(admin.TabularInline):$/;"	c
+StoreHouse	store/models.py	/^class StoreHouse(models.Model):$/;"	c
+TEMPLATES	E_Shop/settings.py	/^TEMPLATES = [$/;"	v
+TIME_ZONE	E_Shop/settings.py	/^TIME_ZONE = 'UTC'$/;"	v
+TYPE_CHOICES	products/models.py	/^    TYPE_CHOICES = ($/;"	v	class:Specification
+USE_I18N	E_Shop/settings.py	/^USE_I18N = True$/;"	v
+USE_L10N	E_Shop/settings.py	/^USE_L10N = True$/;"	v
+USE_TZ	E_Shop/settings.py	/^USE_TZ = True$/;"	v
+WSGI_APPLICATION	E_Shop/settings.py	/^WSGI_APPLICATION = 'E_Shop.wsgi.application'$/;"	v
+__str__	location/models.py	/^    def __str__(self):$/;"	m	class:City	file:
+__str__	location/models.py	/^    def __str__(self):$/;"	m	class:Country	file:
+__str__	location/models.py	/^    def __str__(self):$/;"	m	class:State	file:
+__str__	products/models.py	/^    def __str__(self):$/;"	m	class:Category	file:
+__str__	products/models.py	/^    def __str__(self):$/;"	m	class:Condition	file:
+__str__	products/models.py	/^    def __str__(self):$/;"	m	class:Product	file:
+__str__	products/models.py	/^    def __str__(self):$/;"	m	class:ProductImage	file:
+__str__	products/models.py	/^    def __str__(self):$/;"	m	class:ProductPrice	file:
+__str__	products/models.py	/^    def __str__(self):$/;"	m	class:Specification	file:
+__str__	products/models.py	/^    def __str__(self):$/;"	m	class:SpecificationValue	file:
+__str__	store/models.py	/^    def __str__(self):$/;"	m	class:CoRepository	file:
+__str__	store/models.py	/^    def __str__(self):$/;"	m	class:Factor	file:
+__str__	store/models.py	/^    def __str__(self):$/;"	m	class:ProductFactor	file:
+__str__	store/models.py	/^    def __str__(self):$/;"	m	class:StoreHouse	file:
+address	store/models.py	/^    address = models.CharField(max_length=500,verbose_name=_("address"),blank=True)$/;"	v	class:CoRepository
+application	E_Shop/wsgi.py	/^application = get_wsgi_application()$/;"	v
+args	products/management/commands/create_test_data.py	/^        args = '<shop_id shop_id shop_id ...>' $/;"	v	class:Command
+bulk_category	products/bulk_insert.py	/^def bulk_category():$/;"	f
+bulk_city	products/bulk_insert.py	/^def bulk_city():$/;"	f
+bulk_condition	products/bulk_insert.py	/^def bulk_condition():$/;"	f
+bulk_country	products/bulk_insert.py	/^def bulk_country():$/;"	f
+bulk_product_tablet	products/bulk_insert.py	/^def bulk_product_tablet():$/;"	f
+bulk_repository	products/bulk_insert.py	/^def bulk_repository():$/;"	f
+bulk_spec_val	products/bulk_insert.py	/^def bulk_spec_val():$/;"	f
+bulk_specification	products/bulk_insert.py	/^def bulk_specification():$/;"	f
+bulk_specification_value_brand	products/bulk_insert.py	/^def bulk_specification_value_brand():$/;"	f
+bulk_specification_value_ram	products/bulk_insert.py	/^def bulk_specification_value_ram():$/;"	f
+bulk_state	products/bulk_insert.py	/^def bulk_state():$/;"	f
+bulk_store_house	products/bulk_insert.py	/^def bulk_store_house():$/;"	f
+bulk_test_data	products/bulk_insert.py	/^def bulk_test_data():$/;"	f
+category	products/models.py	/^    category = models.ForeignKey(Category, on_delete=None, related_name="cateory", verbose_name=_("category"), default=1)$/;"	v	class:Product
+city	store/models.py	/^    city = models.ForeignKey(City,verbose_name=_("city"),related_name='city', default=1)$/;"	v	class:CoRepository
+confirm_time	store/models.py	/^    confirm_time = models.DateTimeField(verbose_name=_("created time for factor"), auto_now=True)$/;"	v	class:Factor
+country	location/models.py	/^    country = models.ForeignKey(Country, verbose_name=_('country'), related_name='country', on_delete=None)$/;"	v	class:State
+created_at	products/models.py	/^    created_at = models.DateTimeField(verbose_name=_('product created time'), blank=True, null=True)$/;"	v	class:Product
+created_time	location/models.py	/^    created_time = models.DateTimeField(auto_now_add=True, verbose_name=_('insert time'))$/;"	v	class:City
+created_time	location/models.py	/^    created_time = models.DateTimeField(auto_now_add=True, verbose_name=_('insert time'))$/;"	v	class:Country
+created_time	location/models.py	/^    created_time = models.DateTimeField(auto_now_add=True, verbose_name=_('insert time'))$/;"	v	class:State
+created_time	products/models.py	/^    created_time = models.DateTimeField(_('creation time'), auto_now_add=True)$/;"	v	class:Condition
+created_time	products/models.py	/^    created_time = models.DateTimeField(_('creation time'), auto_now_add=True)$/;"	v	class:Specification
+created_time	products/models.py	/^    created_time = models.DateTimeField(_('creation time'), auto_now_add=True)$/;"	v	class:SpecificationValue
+created_time	store/models.py	/^    created_time = models.DateTimeField(verbose_name=_("created time for factor"), auto_now_add=True)$/;"	v	class:Factor
+db_table	location/models.py	/^        db_table = "city"$/;"	v	class:City.Meta
+db_table	location/models.py	/^        db_table = "country"$/;"	v	class:Country.Meta
+db_table	location/models.py	/^        db_table = "state"$/;"	v	class:State.Meta
+db_table	products/models.py	/^        db_table = "category"$/;"	v	class:Category.Meta
+db_table	products/models.py	/^        db_table = "conditions"$/;"	v	class:Condition.Meta
+db_table	products/models.py	/^        db_table = "product_price_history"$/;"	v	class:ProductPrice.Meta
+db_table	products/models.py	/^        db_table = "products_categories"$/;"	v	class:Product.Meta
+db_table	products/models.py	/^        db_table = "products_images"$/;"	v	class:ProductImage.Meta
+db_table	products/models.py	/^        db_table = "specs"$/;"	v	class:Specification.Meta
+db_table	products/models.py	/^        db_table = "specs_values"$/;"	v	class:SpecificationValue.Meta
+db_table	store/models.py	/^        db_table = "co_repository"$/;"	v	class:CoRepository.Meta
+db_table	store/models.py	/^        db_table = "factor"$/;"	v	class:Factor.Meta
+db_table	store/models.py	/^        db_table = "product_factor_history"$/;"	v	class:ProductFactor.Meta
+db_table	store/models.py	/^        db_table = "store_house"$/;"	v	class:StoreHouse.Meta
+dependencies	location/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	products/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	products/migrations/0002_productprice.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	store/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	store/migrations/0002_auto_20160628_0633.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	store/migrations/0003_auto_20160628_0652.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	store/migrations/0004_auto_20160628_0707.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	store/migrations/0005_auto_20160628_0748.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	store/migrations/0006_auto_20160628_0800.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	store/migrations/0007_auto_20160628_0808.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	store/migrations/0008_factor_productfactor.py	/^    dependencies = [$/;"	v	class:Migration
+description	location/models.py	/^    description = models.TextField(_('description'), blank=True)$/;"	v	class:City
+description	location/models.py	/^    description = models.TextField(_('description'), blank=True)$/;"	v	class:Country
+description	location/models.py	/^    description = models.TextField(_('description'), blank=True)$/;"	v	class:State
+description	products/models.py	/^    description = models.TextField(_('description'), blank=True)$/;"	v	class:Specification
+description	products/models.py	/^    description = models.TextField(verbose_name=_('description for image'), null=True, blank=True)$/;"	v	class:ProductImage
+discount	products/models.py	/^    discount = models.PositiveIntegerField(verbose_name=_("discount for product"), default=0)$/;"	v	class:ProductPrice
+display_value	products/models.py	/^    display_value = models.CharField(_('display value'), max_length=150)$/;"	v	class:SpecificationValue
+factor	store/models.py	/^    factor = models.ForeignKey(Factor, verbose_name = _("factor"),related_name = "factor")$/;"	v	class:ProductFactor
+field	location/migrations/0001_initial.py	/^            field=models.ForeignKey(verbose_name='state', to='location.State', on_delete=None, related_name='state'),$/;"	v	class:Migration
+field	store/migrations/0002_auto_20160628_0633.py	/^            field=models.ForeignKey(related_name='city', to='location.City', default=1, verbose_name='city'),$/;"	v	class:Migration
+field	store/migrations/0002_auto_20160628_0633.py	/^            field=models.PositiveIntegerField(null=True),$/;"	v	class:Migration
+field	store/migrations/0003_auto_20160628_0652.py	/^            field=models.CharField(verbose_name='address', blank=True, max_length=50),$/;"	v	class:Migration
+field	store/migrations/0003_auto_20160628_0652.py	/^            field=models.CharField(verbose_name='address', blank=True, max_length=500),$/;"	v	class:Migration
+field	store/migrations/0004_auto_20160628_0707.py	/^            field=models.ForeignKey(verbose_name='repository', related_name='repository', default=1, to='store.CoRepository'),$/;"	v	class:Migration
+field	store/migrations/0005_auto_20160628_0748.py	/^            field=models.CharField(verbose_name='name', max_length=50, blank=True),$/;"	v	class:Migration
+field	store/migrations/0006_auto_20160628_0800.py	/^            field=models.ForeignKey(to='store.CoRepository', default=1, related_name='repository', verbose_name='repository'),$/;"	v	class:Migration
+fields	location/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
+fields	products/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
+fields	products/migrations/0002_productprice.py	/^            fields=[$/;"	v	class:Migration
+fields	store/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
+fields	store/migrations/0004_auto_20160628_0707.py	/^            fields=[$/;"	v	class:Migration
+fields	store/migrations/0008_factor_productfactor.py	/^            fields=[$/;"	v	class:Migration
+handle	products/management/commands/create_test_data.py	/^        def handle(self, *args, **options): $/;"	m	class:Command
+help_text	products/models.py	/^                                           help_text=_('If marked this value will be available for search filtering'))$/;"	v	class:SpecificationValue
+image_url	products/models.py	/^    image_url = models.CharField(max_length=200, verbose_name=_('image for product'), null=True)$/;"	v	class:ProductImage
+inlines	location/admin.py	/^	inlines = [CityAdminInline]$/;"	v	class:StateAdmin
+inlines	location/admin.py	/^	inlines = [StateAdminInine]$/;"	v	class:CountryAdmin
+inlines	products/admin.py	/^    inlines = [SpecificationValueAdmin,]$/;"	v	class:SpecificationAdmin
+inlines	products/admin.py	/^    inlines = [StoreAdmin, ProductImageAdmin]$/;"	v	class:ProductAdmin
+inlines	store/admin.py	/^   inlines = [StoreAdmin]$/;"	v	class:RepositoryHouseAdmin
+is_confirm	store/models.py	/^    is_confirm = models.BooleanField(verbose_name=_("confirm factor"),default=False)$/;"	v	class:Factor
+is_container	products/models.py	/^    is_container = models.BooleanField(verbose_name=_("can contain products?"), default=False)$/;"	v	class:Product
+is_enable	products/models.py	/^    is_enable = models.BooleanField(verbose_name=_("enable?"), default=True)$/;"	v	class:ProductPrice
+is_enable	products/models.py	/^    is_enable = models.BooleanField(verbose_name=_('enable for show'), default=False)$/;"	v	class:ProductImage
+is_filter_option	products/models.py	/^    is_filter_option = models.BooleanField(_("Display for filtering?"), default=False,$/;"	v	class:SpecificationValue
+is_hidden	products/models.py	/^    is_hidden = models.BooleanField(verbose_name=_("is hidden?"), default=False)$/;"	v	class:Product
+is_send	store/models.py	/^    is_send = models.BooleanField(verbose_name=_("send factor"),default=False)$/;"	v	class:Factor
+list_display	location/admin.py	/^	list_display = ["id","name", "slug", "created_time"] $/;"	v	class:CityAdmin
+list_display	location/admin.py	/^	list_display = ["id","name", "slug", "created_time"] $/;"	v	class:CountryAdmin
+list_display	location/admin.py	/^	list_display = ["id","name", "slug", "created_time"] $/;"	v	class:StateAdmin
+list_display	products/admin.py	/^    list_display = ["id", "created_time", "title", "slug", "description", "spec_type"]$/;"	v	class:SpecificationAdmin
+list_display	products/admin.py	/^    list_display = ["id", "title", "slug", "created_time"]$/;"	v	class:ConditionAdmin
+list_display	products/admin.py	/^    list_display = ["id","name", "pub_date", "category",  "created_at", "parent", "is_hidden", "is_container", "priority_manual" ]$/;"	v	class:ProductAdmin
+list_display	products/admin.py	/^    list_display = ["id","name", "pub_date", "parent"]$/;"	v	class:CategoryAdmin
+list_display	store/admin.py	/^   list_display = ["id", "city", "name", "tel", "address"]$/;"	v	class:RepositoryHouseAdmin
+list_editable	location/admin.py	/^	list_editable = ("name","slug")$/;"	v	class:CityAdmin
+list_editable	location/admin.py	/^	list_editable = ("name","slug")$/;"	v	class:CountryAdmin
+list_editable	location/admin.py	/^	list_editable = ("name","slug")$/;"	v	class:StateAdmin
+list_filter	products/admin.py	/^    list_filter = ["category"]$/;"	v	class:ProductAdmin
+model	location/admin.py	/^	model = City$/;"	v	class:CityAdminInline
+model	location/admin.py	/^	model = State$/;"	v	class:StateAdminInine
+model	products/admin.py	/^    model = ProductImage$/;"	v	class:ProductImageAdmin
+model	products/admin.py	/^    model = SpecificationValue$/;"	v	class:SpecificationValueAdmin
+model	products/admin.py	/^    model = StoreHouse$/;"	v	class:StoreAdmin
+model	store/admin.py	/^    model = StoreHouse$/;"	v	class:StoreAdmin
+model_name	location/migrations/0001_initial.py	/^            model_name='city',$/;"	v	class:Migration
+model_name	store/migrations/0002_auto_20160628_0633.py	/^            model_name='repository',$/;"	v	class:Migration
+model_name	store/migrations/0002_auto_20160628_0633.py	/^            model_name='storehouse',$/;"	v	class:Migration
+model_name	store/migrations/0003_auto_20160628_0652.py	/^            model_name='storehouse',$/;"	v	class:Migration
+model_name	store/migrations/0004_auto_20160628_0707.py	/^            model_name='storehouse',$/;"	v	class:Migration
+model_name	store/migrations/0005_auto_20160628_0748.py	/^            model_name='corepository',$/;"	v	class:Migration
+model_name	store/migrations/0006_auto_20160628_0800.py	/^            model_name='storehouse',$/;"	v	class:Migration
+model_name	store/migrations/0007_auto_20160628_0808.py	/^            model_name='storehouse',$/;"	v	class:Migration
+name	location/migrations/0001_initial.py	/^            name='City',$/;"	v	class:Migration
+name	location/migrations/0001_initial.py	/^            name='Country',$/;"	v	class:Migration
+name	location/migrations/0001_initial.py	/^            name='State',$/;"	v	class:Migration
+name	location/migrations/0001_initial.py	/^            name='state',$/;"	v	class:Migration
+name	location/models.py	/^    name = models.CharField(max_length=50, verbose_name= _('city name'))$/;"	v	class:City
+name	location/models.py	/^    name = models.CharField(max_length=50, verbose_name= _('state name'))$/;"	v	class:Country
+name	location/models.py	/^    name = models.CharField(max_length=50, verbose_name= _('state name'))$/;"	v	class:State
+name	products/migrations/0001_initial.py	/^            name='Category',$/;"	v	class:Migration
+name	products/migrations/0001_initial.py	/^            name='Condition',$/;"	v	class:Migration
+name	products/migrations/0001_initial.py	/^            name='Product',$/;"	v	class:Migration
+name	products/migrations/0001_initial.py	/^            name='ProductImage',$/;"	v	class:Migration
+name	products/migrations/0001_initial.py	/^            name='Specification',$/;"	v	class:Migration
+name	products/migrations/0001_initial.py	/^            name='SpecificationValue',$/;"	v	class:Migration
+name	products/migrations/0002_productprice.py	/^            name='ProductPrice',$/;"	v	class:Migration
+name	products/models.py	/^    name = models.CharField(max_length=50,  verbose_name=_('category name'))$/;"	v	class:Category
+name	products/models.py	/^    name = models.CharField(max_length=50, verbose_name=_('product name'))$/;"	v	class:Product
+name	store/migrations/0001_initial.py	/^            name='Repository',$/;"	v	class:Migration
+name	store/migrations/0001_initial.py	/^            name='StoreHouse',$/;"	v	class:Migration
+name	store/migrations/0002_auto_20160628_0633.py	/^            name='Repository',$/;"	v	class:Migration
+name	store/migrations/0002_auto_20160628_0633.py	/^            name='city',$/;"	v	class:Migration
+name	store/migrations/0002_auto_20160628_0633.py	/^            name='repostory',$/;"	v	class:Migration
+name	store/migrations/0002_auto_20160628_0633.py	/^            name='tel',$/;"	v	class:Migration
+name	store/migrations/0003_auto_20160628_0652.py	/^            name='address',$/;"	v	class:Migration
+name	store/migrations/0003_auto_20160628_0652.py	/^            name='name',$/;"	v	class:Migration
+name	store/migrations/0004_auto_20160628_0707.py	/^            name='CoRepository',$/;"	v	class:Migration
+name	store/migrations/0004_auto_20160628_0707.py	/^            name='address',$/;"	v	class:Migration
+name	store/migrations/0004_auto_20160628_0707.py	/^            name='city',$/;"	v	class:Migration
+name	store/migrations/0004_auto_20160628_0707.py	/^            name='name',$/;"	v	class:Migration
+name	store/migrations/0004_auto_20160628_0707.py	/^            name='repostory',$/;"	v	class:Migration
+name	store/migrations/0004_auto_20160628_0707.py	/^            name='storehouse',$/;"	v	class:Migration
+name	store/migrations/0004_auto_20160628_0707.py	/^            name='tel',$/;"	v	class:Migration
+name	store/migrations/0005_auto_20160628_0748.py	/^            name='name',$/;"	v	class:Migration
+name	store/migrations/0005_auto_20160628_0748.py	/^            name='storehouse',$/;"	v	class:Migration
+name	store/migrations/0006_auto_20160628_0800.py	/^            name='repository',$/;"	v	class:Migration
+name	store/migrations/0006_auto_20160628_0800.py	/^            name='repostory',$/;"	v	class:Migration
+name	store/migrations/0008_factor_productfactor.py	/^            name='Factor',$/;"	v	class:Migration
+name	store/migrations/0008_factor_productfactor.py	/^            name='ProductFactor',$/;"	v	class:Migration
+name	store/models.py	/^    name = models.CharField(max_length=50,verbose_name=_("name"),blank=True)$/;"	v	class:CoRepository
+new_name	store/migrations/0007_auto_20160628_0808.py	/^            new_name='repostory',$/;"	v	class:Migration
+old_name	store/migrations/0007_auto_20160628_0808.py	/^            old_name='repository',$/;"	v	class:Migration
+operations	location/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
+operations	products/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
+operations	products/migrations/0002_productprice.py	/^    operations = [$/;"	v	class:Migration
+operations	store/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
+operations	store/migrations/0002_auto_20160628_0633.py	/^    operations = [$/;"	v	class:Migration
+operations	store/migrations/0003_auto_20160628_0652.py	/^    operations = [$/;"	v	class:Migration
+operations	store/migrations/0004_auto_20160628_0707.py	/^    operations = [$/;"	v	class:Migration
+operations	store/migrations/0005_auto_20160628_0748.py	/^    operations = [$/;"	v	class:Migration
+operations	store/migrations/0006_auto_20160628_0800.py	/^    operations = [$/;"	v	class:Migration
+operations	store/migrations/0007_auto_20160628_0808.py	/^    operations = [$/;"	v	class:Migration
+operations	store/migrations/0008_factor_productfactor.py	/^    operations = [$/;"	v	class:Migration
+options	location/migrations/0001_initial.py	/^            options={$/;"	v	class:Migration
+options	products/migrations/0001_initial.py	/^            options={$/;"	v	class:Migration
+options	products/migrations/0002_productprice.py	/^            options={$/;"	v	class:Migration
+options	store/migrations/0001_initial.py	/^            options={$/;"	v	class:Migration
+options	store/migrations/0004_auto_20160628_0707.py	/^            options={$/;"	v	class:Migration
+options	store/migrations/0004_auto_20160628_0707.py	/^            options={'verbose_name_plural': 'Repositories', 'verbose_name': 'Repository'},$/;"	v	class:Migration
+options	store/migrations/0005_auto_20160628_0748.py	/^            options={'verbose_name': 'StoreHouse', 'verbose_name_plural': 'StoreHouses'},$/;"	v	class:Migration
+options	store/migrations/0008_factor_productfactor.py	/^            options={$/;"	v	class:Migration
+ordering	location/models.py	/^        ordering = ["name"]$/;"	v	class:City.Meta
+ordering	location/models.py	/^        ordering = ["name"]$/;"	v	class:Country.Meta
+ordering	location/models.py	/^        ordering = ["name"]$/;"	v	class:State.Meta
+ordering	products/models.py	/^        ordering = ["id","-created_at"]$/;"	v	class:Product.Meta
+ordering	products/models.py	/^        ordering = ["id","-pub_date"]$/;"	v	class:ProductImage.Meta
+ordering	products/models.py	/^        ordering = ["specification_id", "id"]$/;"	v	class:SpecificationValue.Meta
+parent	products/models.py	/^    parent = models.ForeignKey("self", null=True, blank=True, related_name="children")$/;"	v	class:Category
+parent	products/models.py	/^    parent = models.ForeignKey("self", null=True, blank=True, related_name="children")$/;"	v	class:Product
+price	products/models.py	/^    price = models.PositiveIntegerField(verbose_name=_("price for product"), default=0)$/;"	v	class:ProductPrice
+priority_manual	products/models.py	/^    priority_manual = models.PositiveSmallIntegerField(verbose_name=_('manual priority'), default=0)$/;"	v	class:Product
+product	products/models.py	/^    product = models.ForeignKey(Product, verbose_name=_("product"), related_name="product_price", default=1)$/;"	v	class:ProductPrice
+product	products/models.py	/^    product= models.ForeignKey(Product,verbose_name=_('product'), related_name='product')$/;"	v	class:ProductImage
+product	store/models.py	/^    product = models.ForeignKey(Product,verbose_name=_("product"), related_name="product_store")$/;"	v	class:StoreHouse
+pub_date	products/models.py	/^    pub_date = models.DateTimeField(auto_now_add=True,  verbose_name=_('product publish time'))$/;"	v	class:Product
+pub_date	products/models.py	/^    pub_date = models.DateTimeField(auto_now_add=True,verbose_name= _('category publish time'))$/;"	v	class:Category
+pub_date	products/models.py	/^    pub_date = models.DateTimeField(verbose_name=_('publish_date'), auto_now_add=True)$/;"	v	class:ProductImage
+quantity	store/models.py	/^    quantity = models.PositiveIntegerField(null=False, default=0)$/;"	v	class:ProductFactor
+quantity	store/models.py	/^    quantity = models.PositiveIntegerField(null=False, default=0)$/;"	v	class:StoreHouse
+repository	store/models.py	/^    repository = models.ForeignKey(CoRepository, verbose_name=_("factor for repository"),default=1)$/;"	v	class:Factor
+repostory	store/models.py	/^    repostory = models.ForeignKey(CoRepository, verbose_name = _("repository"), related_name ="repository", default=1)$/;"	v	class:StoreHouse
+search_fields	products/admin.py	/^    search_fields = ["name"]$/;"	v	class:ProductAdmin
+send_time	store/models.py	/^    send_time = models.DateTimeField(verbose_name=_("send time for factor"), auto_now=True)$/;"	v	class:Factor
+slug	location/models.py	/^    slug = models.SlugField(_('slug city'), help_text=_('Use ascii characters'))$/;"	v	class:City
+slug	location/models.py	/^    slug = models.SlugField(_('slug state'), help_text=_('Use ascii characters'))$/;"	v	class:Country
+slug	location/models.py	/^    slug = models.SlugField(_('slug state'), help_text=_('Use ascii characters'))$/;"	v	class:State
+slug	products/models.py	/^    slug = models.SlugField(_('slug title'), help_text=_('Use ascii characters'))$/;"	v	class:Condition
+slug	products/models.py	/^    slug = models.SlugField(_('slug title'), help_text=_('Use ascii characters'))$/;"	v	class:Specification
+slug	products/models.py	/^    slug = models.SlugField(_('slug value'), help_text=_('Use ascii characters'), blank=True)$/;"	v	class:SpecificationValue
+spec_type	products/models.py	/^    spec_type = models.PositiveSmallIntegerField(_('spec type'), choices=TYPE_CHOICES, default=1)$/;"	v	class:Specification
+specification	products/models.py	/^    specification = models.ForeignKey(Specification, verbose_name=_('Specification'))$/;"	v	class:SpecificationValue
+state	location/models.py	/^    state = models.ForeignKey(State, verbose_name=_('state'), related_name='state', on_delete=None)$/;"	v	class:City
+store	store/models.py	/^    store = models.ForeignKey(StoreHouse, verbose_name=_("store"), related_name="store")$/;"	v	class:ProductFactor
+tel	store/models.py	/^    tel = models.PositiveIntegerField(null=True)$/;"	v	class:CoRepository
+title	products/models.py	/^    title = models.CharField(_('title'), max_length=50)$/;"	v	class:Condition
+title	products/models.py	/^    title = models.CharField(_('title'), max_length=50)$/;"	v	class:Specification
+urlpatterns	E_Shop/urls.py	/^urlpatterns = [$/;"	v
+user	store/models.py	/^    user = models.ForeignKey(User, verbose_name= _("factor user"),default=1)$/;"	v	class:Factor
+verbose_name	location/models.py	/^        verbose_name = _('cities')$/;"	v	class:City.Meta
+verbose_name	location/models.py	/^        verbose_name = _('countries')$/;"	v	class:Country.Meta
+verbose_name	location/models.py	/^        verbose_name = _('states')$/;"	v	class:State.Meta
+verbose_name	products/models.py	/^        verbose_name = _("Price History")$/;"	v	class:ProductPrice.Meta
+verbose_name	products/models.py	/^        verbose_name = _('Category')$/;"	v	class:Category.Meta
+verbose_name	products/models.py	/^        verbose_name = _('Products')$/;"	v	class:Product.Meta
+verbose_name	products/models.py	/^        verbose_name = _('ProductsImage')$/;"	v	class:ProductImage.Meta
+verbose_name	store/models.py	/^        verbose_name = _("Repository")$/;"	v	class:CoRepository.Meta
+verbose_name	store/models.py	/^        verbose_name = _("StoreHouse")$/;"	v	class:StoreHouse.Meta
+verbose_name	store/models.py	/^        verbose_name = _("facror")$/;"	v	class:Factor.Meta
+verbose_name	store/models.py	/^        verbose_name = _("product in facror")$/;"	v	class:ProductFactor.Meta
+verbose_name_plural	location/models.py	/^        verbose_name_plural = _('Countries')$/;"	v	class:Country.Meta
+verbose_name_plural	location/models.py	/^        verbose_name_plural = _('cities')$/;"	v	class:City.Meta
+verbose_name_plural	location/models.py	/^        verbose_name_plural = _('states')$/;"	v	class:State.Meta
+verbose_name_plural	products/models.py	/^        verbose_name_plural = _("Price History")$/;"	v	class:ProductPrice.Meta
+verbose_name_plural	products/models.py	/^        verbose_name_plural = _('Categories')$/;"	v	class:Category.Meta
+verbose_name_plural	products/models.py	/^        verbose_name_plural = _('Products')$/;"	v	class:Product.Meta
+verbose_name_plural	products/models.py	/^        verbose_name_plural = _('ProductsImage')$/;"	v	class:ProductImage.Meta
+verbose_name_plural	store/models.py	/^        verbose_name_plural = _("Repositories")$/;"	v	class:CoRepository.Meta
+verbose_name_plural	store/models.py	/^        verbose_name_plural = _("StoreHouses")$/;"	v	class:StoreHouse.Meta
+verbose_name_plural	store/models.py	/^        verbose_name_plural = _("facrors")$/;"	v	class:Factor.Meta
+verbose_name_plural	store/models.py	/^        verbose_name_plural = _("products in factor")$/;"	v	class:ProductFactor.Meta
