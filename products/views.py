@@ -8,6 +8,7 @@ from django.views.decorators.cache import cache_page
 import datetime
 
 
+@cache_page(60 * 15)
 def index(request):
     product_list = Product.objects.all()[:3]
     template = loader.get_template('products/index.html')

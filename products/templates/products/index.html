@@ -1,6 +1,24 @@
-{% extends 'products/base.html' %}
+{% extends 'products/base_start.html' %}
 
 {% block content %}
+    <!--  ==========  -->
+    <!--  = Slider Revolution =  -->
+    <!--  ==========  -->
+        <div class="fullwidthbanner-container">
+            {% include 'products/banner.html' %}
+        </div>
+
+    <!--  ==========  -->
+    <!--  = Main container =  -->
+    <!--  ==========  -->
+    <div class="container">
+        <div class="row"> 
+            person
+        </div>
+       <div class="row featured-items blocks-spacer"> 
+           person1
+       </div>
+    </div> <!-- /container -->
     {% if product_list %}
         <ul>
             {% for product in product_list%}

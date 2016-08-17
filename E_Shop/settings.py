@@ -110,4 +110,4 @@ STATIC_URL = '/static/'
 REST_FRAMEWORK = {
         'DEFAULT_FILTER_BACKENDS': ('rest_framework.filters.DjangoFilterBackend',)
         }
-CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
+# CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
