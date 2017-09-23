@@ -1,0 +1,52 @@
+{
+	"id": "4343ca3f-5091-bec1-8f6a-fc5e5ab9e92d",
+	"name": "vidad",
+	"description": "",
+	"order": [
+		"76daed87-b0c7-afd1-0f33-b1357a031b24"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1505626653696,
+	"owner": "420241",
+	"public": false,
+	"requests": [
+		{
+			"id": "76daed87-b0c7-afd1-0f33-b1357a031b24",
+			"headers": "Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcmlnX2lhdCI6MTUwNTYyNjUyMywiZW1haWwiOiJtaGRtb3NhdmlAZ21haWwuY29tIiwiaXAiOiIxNzIuMTYuMzkuNjIiLCJ1c2VybmFtZSI6Im1oZC5tb3NhdmlAZ21haWwuY29tIiwiZXhwIjoxNTA1NjQwOTIzLCJ1c2VyX2lkIjoxNzd9.UNMgUMYPuy0yIYi8PZbf-mzVWBG9xZtjQJ8YMH2NzhY\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcmlnX2lhdCI6MTUwNTYyNjUyMywiZW1haWwiOiJtaGRtb3NhdmlAZ21haWwuY29tIiwiaXAiOiIxNzIuMTYuMzkuNjIiLCJ1c2VybmFtZSI6Im1oZC5tb3NhdmlAZ21haWwuY29tIiwiZXhwIjoxNTA1NjQwOTIzLCJ1c2VyX2lkIjoxNzd9.UNMgUMYPuy0yIYi8PZbf-mzVWBG9xZtjQJ8YMH2NzhY",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://api.ci.vidad.net/api/report/advertiser/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "4343ca3f-5091-bec1-8f6a-fc5e5ab9e92d",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://api.ci.vidad.net/api/report/advertiser/",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1505626655358,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\"start\":\"1396-06-01\",\"end\":\"1396-06-30\"}"
+		}
+	]
+}
